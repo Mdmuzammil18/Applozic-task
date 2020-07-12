@@ -1,6 +1,3 @@
-
-
-
 function moveSlide(currentSlide, nextSlide) {
   currentSlide.checked = false;
   nextSlide.checked = true;
