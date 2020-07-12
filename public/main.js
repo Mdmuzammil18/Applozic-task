@@ -43,20 +43,7 @@ function hide_show_images(feature_value) {
   image_elements.forEach(function (images) {
     images.style.display = "none";
   });
-
-  if (feature_value == "conversation") {
-    document.querySelector("." + feature_value).style.display = "block";
-  } else if (feature_value == "bot") {
-    document.querySelector("." + feature_value).style.display = "block";
-  } else if (feature_value == "agent") {
-    document.querySelector("." + feature_value).style.display = "block";
-  } else if (feature_value == "FAQ") {
-    document.querySelector("." + feature_value).style.display = "block";
-  } else if (feature_value == "integration") {
-    document.querySelector("." + feature_value).style.display = "block";
-  } else {
-    console.log("");
-  }
+  document.querySelector("." + feature_value).style.display = "block";
 }
 
 // TO ANIMATE THE TAB ON EVERY 5 SECS 
