@@ -85,3 +85,104 @@ for (var i = 0; i < feature_elements.length; i++) {
     hide_show_images(feature_value);
   });
 }
+
+
+// const sleep = (delay) => {
+//   setTimeout( () => {
+//     console.log("awake");
+//   }, delay)
+// }
+
+// sleep(5000);
+
+// const sleep = (delay) => {
+//   return new Promise(resolve => {
+//     setTimeout(resolve, delay)
+//   });
+// }
+
+function time(delay) {
+  return new Promise(resolve => {
+    setTimeout(resolve, delay);
+  });
+}
+
+
+// function time(delay) {
+//   return new Promise(resolve, reject) => {
+
+//   }
+// }
+// (async () => {
+//   console.log("sleep");
+//   await sleep(2000);
+//   console.log("awake");
+// })
+// ();
+
+async function wait() {
+  console.log('sleep');
+  await time(2000);
+  console.log("awake");
+}
+wait();
+
+
+
+// let x = function() {
+//   console.log("im function x");
+// } 
+
+let y = function(callback) {
+  console.log('im function y');
+  callback();
+}
+
+// x();
+y(function(c) {
+  console.log("im function x");
+} );
+
+let add = function(a, b) {
+  return a + b;
+}
+
+function multiply (a, b) {
+  return a *b;
+}
+
+
+let calc = function(num1, num2, calcType) {
+
+return calcType(num1, num2);
+  // if(calcType === "add") {
+  //   return num1 + num2;
+  // } else if(calcType === "multiply") {
+  //   return num1 * num2;
+  // }
+}
+console.log(calc(4,5, multiply));
+
+
+let myArr = [{
+  name: "czaammil",
+  age: 22, },
+{
+  name: "dohamed",
+  age: 10,
+},
+{
+  name: "aujju",
+  age: 5,
+}]; 
+
+myArr.sort(function(val1, val2) {
+// if(val1.name < val2.name) {
+//   return -1;
+// } else {
+//   return 1;
+// }
+return val1.name - val2.name;
+});
+
+console.log(myArr);

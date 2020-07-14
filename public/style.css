@@ -10,6 +10,7 @@
   margin: 1.6rem 1.6rem 0 auto;
   font-size: 1rem;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -559,7 +560,7 @@ input[type="radio"]:checked {
     width: 50%;
     top: 20%;
     left: 10%;
-    font-size: 0.4rem;
+    font-size: 0.47rem;
     line-height: 1.8;
   }
   .group-1 {
@@ -570,15 +571,18 @@ input[type="radio"]:checked {
   }
   .group-1 img {
     display: flex;
-    width: 300px;
-    height: 300px;
+    width: 90%;
+    height: auto;
     margin: 0 auto;
   }
   .group-2 img {
     display: flex;
-    width: 300px;
-    height: 300px;
+    width: 90%;
+    height: auto;
     margin: 0 auto;
+  }
+  img {
+    object-fit: cover;
   }
   .oval-3 {
     display: none;
@@ -643,6 +647,7 @@ input[type="radio"]:checked {
   }
   .heading-2 {
     font-size: 1rem;
+    margin: 0 2rem;
   }
   .slide {
     height: 300px;
@@ -663,7 +668,8 @@ input[type="radio"]:checked {
     margin-bottom: 1rem;
   }
   .image-section {
-    margin: 0 5%;
+    margin: 5% 5% 0 5%;
+    height: 300px;
   }
   .image-section img {
     width: 100%;
@@ -697,10 +703,16 @@ input[type="radio"]:checked {
     height: 25px;
   }
   .image-section img {
-    width: 300px;
-    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
   }
 }
+@media only screen and (max-width: 350px) { 
+  .quote{
+    font-size: 0.4rem;
+  }
+  }
 
 @media only screen and (min-width: 545px) {
   .oval {
